@@ -4,12 +4,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
 	<flow name="testsaveFlow" doc:id="649ebefa-85eb-4f64-991f-396deeb54c69" >
-		<logger level="INFO" doc:name="Logger" doc:id="444d3e9c-56ed-4d83-8b94-c9b1c8e447f6" message='#[%dw 2.0&#10;output application/java&#10;---&#10;/*test*/&#10;"12"]'/>
+		<logger level="INFO" doc:name="Logger" doc:id="444d3e9c-56ed-4d83-8b94-c9b1c8e447f6" message='#[%dw 2.0&#10;
+		output application/java&#10;
+		---&#10;
+		/*asads*/&#10;
+		/*test*/&#10;
+		"12"]'/>
 	</flow>
 	<flow name="testsaveFlow1" doc:id="c004a3b6-82f2-4657-b307-cc557c4ddce0" >
 		<logger level="INFO" doc:name="Logger" doc:id="09e17487-448e-4fca-9065-5050eb2ca311" message="#[payload]"/>
 	</flow>
 	<flow name="testsaveFlow2" doc:id="fd12719b-54ca-4ef8-a2ad-34a87c004146" >
-		<logger level="INFO" doc:name="Logger" doc:id="64a1e0e9-deab-4fd0-bceb-763cef8d00af" />
+		<logger level="INFO" doc:name="Logger" doc:id="64a1e0e9-deab-4fd0-bceb-763cef8d00af" message='#[%dw 2.0&#10;&#10;		output application/java&#10;&#10;		---&#10;&#10;		/*asads*/&#10;		/*test*/&#10;		"12"]'/>
 	</flow>
 </mule>
