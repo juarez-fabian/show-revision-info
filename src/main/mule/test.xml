@@ -4,6 +4,19 @@ http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/cu
 	<flow name="testFlow" doc:id="f3ac86de-32a3-41ca-b32c-687d5f89495c" >
 		<logger level="INFO" doc:name="Logger" doc:id="4a6d7bf5-d304-4973-a04e-2c8449f5fa21" />
 	</flow>
-
+	<flow name="flow2" doc:id="c5189e88-136f-4dc8-8c15-41a2572dfb54" >
+		<set-variable value='#[%dw 2.0
+&#10;output application/java
+&#10;---
+&#10;/*test*/
+&#10;"1"]' doc:name="Set Variable" doc:id="9b294271-afc3-4869-b629-98c5385e1207" variableName="uno"/>
+	</flow>
+	<flow name="flow3" doc:id="5e18cdd9-03e0-436c-b418-c8c86ad4c281" >
+		<set-variable value='#[%dw 2.0
+&#10;output application/java
+&#10;---
+&#10;/*test*/
+&#10;"1"]' doc:name="Set Variable" doc:id="aa0fd291-817d-4f9b-9adb-e822b4b78b39" variableName="uno"/>
+	</flow>
     
 </mule>

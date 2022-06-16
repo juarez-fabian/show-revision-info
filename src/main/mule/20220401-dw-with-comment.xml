@@ -7,21 +7,16 @@
 		<set-variable value='#[%dw 2.0
 &#10;output application/java
 &#10;---
+&#10;/*test*/
 &#10;"1"]' doc:name="Set Variable" doc:id="db0f488c-3cf9-424f-9a91-9b125ab2dcf7" variableName="uno"/>
 	</flow>
 	<flow name="20220401-dw-with-commentFlow1" doc:id="a206be00-9f65-4aca-a57b-345eb7811676" >
-		<set-variable value='#[%dw 2.0
-&#10;output application/java
-&#10;---
-&#10;"1"]' doc:name="Set Variable" doc:id="dae06171-b86d-4397-93e2-1837a770d0a3" variableName="dos"/>
+		<set-variable value='#[%dw 2.0&#10;&#10;output application/java&#10;&#10;---&#10;"1"]' doc:name="Set Variable" doc:id="dae06171-b86d-4397-93e2-1837a770d0a3" variableName="dos"/>
 	</flow>
 	<flow name="20220401-dw-with-commentFlow3" doc:id="16727986-606c-482c-95bb-d5ecb656c4ec" >
 		<set-variable value="#[payload]" doc:name="Set Variable" doc:id="0d9bb27b-89ba-4611-9757-994937128555" variableName="test"/>
 	</flow>
 	<flow name="20220401-dw-with-commentFlow2" doc:id="11a43ffe-b0f7-4c92-8f7e-092fffc0c223" >
-		<set-variable value='#[%dw 2.0
-&#10;output application/java
-&#10;---
-&#10;"1"]' doc:name="Set Variable" doc:id="62176009-08a9-42fc-bc4e-57df66544a8d" variableName="tres"/>
+		<set-variable value='#[%dw 2.0&#10;&#10;output application/java&#10;&#10;---&#10;"121"]' doc:name="Set Variable" doc:id="62176009-08a9-42fc-bc4e-57df66544a8d" variableName="tres"/>
 	</flow>
 </mule>
