@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="20220401-dw-with-commentFlow" doc:id="d6077ceb-2608-4d97-b0b8-b02ee11d5a6f" >
+		<scheduler doc:name="Scheduler" doc:id="1ac1ec0c-cc20-43ca-b52f-8c812c8a9786" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<set-variable doc:name="paste and save" doc:id="7c562fc4-406b-4aad-86d3-bf6b36b1901d" variableName="pasteComplete" value="#[%dw 2.0&#10;output application/java&#10;--- &#10;// for Uhc 692 the sticker, not the ticket is requested &#10;// see P2P-2747 &#10;(vars.reprocessor.uhc == 692)]"/>
+		<set-variable value="#[%dw 2.0&#10;output application/java&#10;--- &#10;// for Uhc 692 the sticker, not the ticket is requested &#10;// see P2P-2747 &#10;// comment&#10;(vars.reprocessor.uhc == 692)]" doc:name="Set Variable" doc:id="9e120acc-e64e-4508-9dfa-fb7add67ce14" variableName="example"/>
+	</flow>
+</mule>
