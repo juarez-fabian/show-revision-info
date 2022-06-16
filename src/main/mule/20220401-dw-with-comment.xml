@@ -7,7 +7,7 @@
 		<logger level="INFO" doc:name="Logger" doc:id="d568b688-35f8-4aa0-830e-45190e2ec49c" message='#[%dw 2.0&#10;output application/java&#10;---&#10;/*test*/&#10;"12"]'/>
 	</flow>
 	<flow name="20220401-dw-with-commentFlow1" doc:id="42680038-da5a-4165-9714-1e698f5dde19" >
-		<logger level="INFO" doc:name="Logger" doc:id="f74759f8-59fb-4fba-986b-b59453d68670" />
+		<logger level="INFO" doc:name="Logger" doc:id="f74759f8-59fb-4fba-986b-b59453d68670" message='#[%dw 2.0&#10;output application/java&#10;---&#10;/*test*/&#10;"12"]'/>
 	</flow>
 	<flow name="20220401-dw-with-commentFlow2" doc:id="24f48a9a-ed68-48bc-ab78-5303269cc69d" >
 		<logger level="INFO" doc:name="Logger" doc:id="aad92df0-27e1-4919-8876-b323f9294e1d" />
