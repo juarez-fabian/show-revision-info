@@ -15,6 +15,9 @@
 &#10;---
 &#10;"1"]' doc:name="Set Variable" doc:id="dae06171-b86d-4397-93e2-1837a770d0a3" variableName="dos"/>
 	</flow>
+	<flow name="20220401-dw-with-commentFlow3" doc:id="16727986-606c-482c-95bb-d5ecb656c4ec" >
+		<set-variable value="#[payload]" doc:name="Set Variable" doc:id="0d9bb27b-89ba-4611-9757-994937128555" variableName="test"/>
+	</flow>
 	<flow name="20220401-dw-with-commentFlow2" doc:id="11a43ffe-b0f7-4c92-8f7e-092fffc0c223" >
 		<set-variable value='#[%dw 2.0
 &#10;output application/java
